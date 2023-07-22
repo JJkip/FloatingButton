@@ -12,7 +12,7 @@ struct ContentView: View {
         TabView {
                     NavigationStack {
                         // 1
-                        ZStack {
+                        ZStack(alignment: .bottomTrailing) {
 
                             List(0..<100) { i in
                                 Text("Item \(i)")
