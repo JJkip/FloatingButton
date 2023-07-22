@@ -24,6 +24,11 @@ struct ContentView: View {
                                 // Action
                             } label: {
                                 Image(systemName: "plus")
+                                    .font(.title.weight(.semibold))
+                                    .padding()
+                                    .background(Color.purple)
+                                    .foregroundColor(.white)
+                                    .clipShape(Circle())
                             }
                         }
                     }
