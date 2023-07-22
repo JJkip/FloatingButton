@@ -31,6 +31,7 @@ struct ContentView: View {
                                     .clipShape(Circle())
                                     .shadow(radius: 4, x: 0, y: 4)
                             }
+                            .padding()
                         }
                     }
                     .tabItem {
