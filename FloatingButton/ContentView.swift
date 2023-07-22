@@ -29,6 +29,7 @@ struct ContentView: View {
                                     .background(Color.purple)
                                     .foregroundColor(.white)
                                     .clipShape(Circle())
+                                    .shadow(radius: 4, x: 0, y: 4)
                             }
                         }
                     }
