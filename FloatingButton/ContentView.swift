@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    let gradient = LinearGradient(colors: [.pink, .purple], startPoint: .leading, endPoint: .trailing)
+    let text2 = "List"
     var body: some View {
         TabView {
                     NavigationStack {
@@ -18,6 +20,10 @@ struct ContentView: View {
                                 Text("Item \(i)")
                             }
                             .navigationTitle("Home")
+                            Text("All, \(text2).foreg")
+                                .bold()
+                                .font(.title)
+                                .textCase(.uppercase)
                             // 2
                             Button {
 
@@ -36,6 +42,7 @@ struct ContentView: View {
                     }
                     .tabItem {
                         Label("Home", systemImage: "house")
+                        
                     }
                 }
     }
